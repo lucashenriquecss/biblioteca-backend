@@ -13,6 +13,7 @@
     <a href="https://www.devchallenge.com.br/">DevChallenge</a>
   </p>
 </p>
+## Iniciar API
 
 ## Índice
 
@@ -53,10 +54,20 @@ Faça um print, gif ou vídeo e compartilhe o resultado com a #devchallenge ou m
 Desafio criado por  <a href="https://www.linkedin.com/in/lorenagmontes/">Lorena</a> :)
 
 
-# Comunidade DevChallenge
-Site: https://www.devchallenge.com.br/ <br>
-Discord: https://discord.gg/yvYXhGj <br>
-Linkedin: https://www.linkedin.com/company/devchallenge/<br>
-Twitter: https://twitter.com/dev_challenge<br>
-Instagram: https://www.instagram.com/devchallenge/<br>
+# Como utilizar 
+* API Django
+* Foi utilizado Python e o framework web Django.
 
+* Pré requisitos:
+* Python
+* Pip
+* Django
+* Passo a passo:
+1. Faça o download do repositório como preferir. Uma das opções é usando o comando git clone <link_do_repositorio>;
+2.Vá até a pasta onde se encontra o executavel manage.py : cd biblioteca-backend/;
+3. Baixe a extensão: pip install djangorestframework;
+4. Fique atento aos erros, o pip pode estar desatualizado!
+5. Execute o comando python manage.py makemigrations para criar novas migrações, com base nas alterações feitas em seus modelos;
+6. Em seguida o comando python manage.py migrate para aplicar alterações criadas pelo comando anterior;
+8. Agora, coloque a aplicação pra rodar: python manage.py runserver;
+9. Abra o seu servidor de preferência e busque por http://localhost:8000/ ou clique aqui.

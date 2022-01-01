@@ -7,3 +7,4 @@ class LivrosSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Livros
         fields = '__all__'
+

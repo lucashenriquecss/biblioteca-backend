@@ -21,8 +21,11 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 route = routers.DefaultRouter() #rota principal default
-route.register(r'livros/', livrosviewset.LivrosViewset, basename='Livros')
+route.register(r'livros', livrosviewset.LivrosViewset, basename='Livros')
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include(route.urls))
+    path('', include(route.urls)),
+   
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
